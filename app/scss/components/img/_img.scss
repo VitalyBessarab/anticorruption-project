@@ -1,0 +1,48 @@
+.img {
+	vertical-align: top;
+
+	margin-left: -4px;
+
+	@media only screen and (max-width: 800px) {
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+	}
+}
+
+.img--reverse {
+	float: left;
+	margin-left: 0;
+}
+
+.img--about {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	@media only screen and (max-width: 950px) {
+		top: -23px;
+	}
+
+	@media only screen and (max-width: 830px) {
+		top: -41px;
+		left: -20px;
+		
+		width: 403px;
+	}	
+
+	@media only screen and (max-width: 800px) {
+		left: auto;
+		right: 0;
+	}
+
+	@media only screen and (max-width: 675px) {
+		top: -65px;
+		right: -50px;
+	}
+
+	@media only screen and (max-width: 560px) {
+		top: 0;
+		right: 0;
+	}		
+}

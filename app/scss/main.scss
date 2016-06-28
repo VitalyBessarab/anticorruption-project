@@ -1,0 +1,69 @@
+@import 'helpers/variables';
+@import 'base/reset';
+@import 'base/bases';
+@import 'base/layout';
+@import 'base/fonts';
+
+@import 'components/header/header';
+@import 'components/logo/logo';
+@import 'components/menu/menu';
+@import 'components/button/button';
+@import 'components/lang-switcher/lang-switcher';
+
+@import 'components/banner/banner';
+@import 'components/donate-corruption/donate-corruption';
+
+@import 'components/input/input';
+@import 'components/input/checkbox';
+@import 'components/input/radio';
+
+@import 'components/form/form';
+@import 'components/title/title';
+@import 'components/infoblock/infoblock';
+@import 'components/btn-box/btn-box';
+
+@import 'components/date-box/date-box';
+@import 'components/news-box/news-box';
+
+@import 'components/footer/footer';
+@import 'components/social/social';
+@import 'components/contacts/contacts';
+@import 'components/subscribe/subscribe';
+
+@import 'components/info/info';
+@import 'components/copyright/copyright';
+@import 'components/search-box/search-box';
+
+@import 'components/news/news';
+@import 'components/news-slider/news-slider';
+@import 'components/img/img';
+@import 'components/about/about';
+
+@import 'components/members/members';
+@import 'components/member/member';
+@import 'components/social-icons/social-icons';
+
+@import 'components/volunteers/volunteers';
+@import 'components/volunteer/volunteer';
+@import 'components/cells/cells';
+@import 'components/map/map';
+@import 'components/select-city/select-city';
+
+@import 'components/googlemaps/infowindow';
+@import 'components/news-blocks/news-blocks';
+@import 'components/news-item/news-item';
+@import 'components/load-more/load-more';
+@import 'components/news-individual/news-individual';
+
+@import 'components/news-inner/news-inner';
+@import 'components/news-article/news-article';
+
+@import 'components/comments/comments';
+@import 'components/img-slider/img-slider';
+@import 'components/tabs/tabs';
+@import 'components/help/help';
+@import 'components/tab/tab';
+@import 'components/label/label';
+
+@import 'components/repairs-map/repairs-map';
+@import 'components/main-contacts/main-contacts';

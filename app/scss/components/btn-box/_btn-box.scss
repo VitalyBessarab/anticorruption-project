@@ -1,0 +1,105 @@
+.btn-box {
+	max-width: 1000px;
+	min-width: 320px;
+	height: 300px;
+	margin: 50px auto 0;
+
+	background-image: url('/img/team_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: 100%;
+
+	border-top: 1px solid transparent;
+
+	.btn-box__head {
+		display: block;
+
+		width: 140px;
+		height: 20px;
+
+		margin-top: 50px;
+		padding-left: 50px;
+		padding-bottom: 3px;
+
+		line-height: 20px;
+
+		background-image: url('/img/select_long2.png');
+		background-repeat: no-repeat;
+
+		font-family: 'OpenSans-Semibold', Arial, sans-serif;
+		font-size: 13px;
+		color: $primary-color-dark2;
+	}	
+}
+
+.btn-box--support {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+
+	width: auto;
+	height: 150px;
+	margin-top: 0;
+
+	background-image: url('/img/support_bg.jpg');
+
+	@media only screen and (max-width: 880px) {
+		flex-direction: column;
+
+		background-position: 30%;
+	}
+
+	@media only screen and (max-width: 635px) {
+		flex-direction: row;
+
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
+	@media only screen and (max-width: 590px) {
+		flex-flow: column;
+		
+		height: 250px;
+
+		background-position: 46%;
+		background-size: cover;
+	}
+}
+
+.btn-box--join {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+	width: auto;
+	height: 150px;
+	margin-top: 0;
+
+	background-image: url('/img/join_bg.jpg');
+
+	@media only screen and (max-width: 690px) {
+		flex-direction: column;
+	}
+
+	@media only screen and (max-width: 590px) {
+		height: 250px;
+		background-position: 46%;
+		background-size: cover;
+		flex-flow: column;
+	}
+}
+
+.btn-box--team-contacts {
+	@media only screen and (max-width: 1000px){
+		margin: 50px auto 100px;
+	}
+	
+	@media only screen and (max-width: 430px){
+		margin: 145px auto 100px;
+	}
+
+	@media only screen and (max-width: 400px){
+		margin: 195px auto 100px;
+	}
+}

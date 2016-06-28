@@ -1,0 +1,158 @@
+.repairs-map {
+	max-width: 1000px;
+	min-width: 320px;
+	height: 690px;
+	margin: 0 auto;
+	margin-top: 63px;
+
+	.repairs-map__content {
+		display: flex;
+		flex-flow: row nowrap;
+
+		margin-top: 39px;
+
+		.repairs-map__info {
+			background-color: $primary-color-light1;
+
+			.repairs-map__search {
+				width: 400px;
+				height: 100px;
+				padding-top: 33px;
+				padding-left: 50px;
+
+				background-color: $primary-color-dark1;
+				background-image: url('/img/search_icon.png');
+				background-repeat: no-repeat;
+				background-position: 91% 50%;
+
+				p {
+					font: 14px/18px 'OpenSans-Semibold', Arial, sans-serif;
+					color: $primary-color-light1;
+				}
+
+				@media only screen and (max-width: 880px) {
+					width: 380px;
+					padding-left: 4%;
+
+					background-position: 88% 50%;
+				}
+				
+				@media only screen and (max-width: 760px) {
+					width: 100%;
+					padding-left: 2%;
+
+					background-position: 215px 50%;
+				}
+			}
+
+			.repairs-map__about {
+				width: 400px;
+				height: 120px;
+
+				border-bottom: 1px solid $primary-color-light4;
+
+				p:first-child {
+					width: 350px;
+					padding-top: 30px;
+					padding-left: 51px;
+
+					font: 12px/15px 'OpenSans-Regular', Arial, sans-serif;
+					color: $primary-color-dark4;
+					
+					@media only screen and (max-width: 880px) {
+						padding-left: 4%;
+					}
+
+					@media only screen and (max-width: 760px) {
+						padding-left: 2%;
+					}
+
+					@media only screen and (max-width: 400px) {
+						width: 305px;
+					}
+				}
+
+				a:last-child {
+					display: inline-block;
+					margin-left: 51px;
+					margin-top: 13px;
+
+					font: 12px 'OpenSans-Regular', Arial, sans-serif;
+					color: $primary-color-dark1;
+
+					@media only screen and (max-width: 880px) {
+						margin-left: 4%;
+					}
+
+					@media only screen and (max-width: 760px) {
+						margin-left: 2%;
+					}					
+				}
+
+				@media only screen and (max-width: 880px) {
+					width: 380px;
+				}
+
+				@media only screen and (max-width: 760px) {
+					width: 100%;
+				}	
+			}
+
+			.repairs-map__objects-list {
+				width: 400px;
+				height: 382px;
+				padding-top: 40px;
+				padding-left: 26px;
+
+				& > li {
+					a:last-child {
+						font: 12px 'OpenSans-Regular', Arial, sans-serif;
+						color: $primary-color-dark1;
+
+						@media only screen and (max-width: 405px) {
+							margin-left: auto;
+							padding-right: 15px;
+						}	
+					}
+
+					@media only screen and (max-width: 405px) {
+						display: flex;
+						flex-direction: column;
+					}				
+				}
+
+				@media only screen and (max-width: 880px) {
+					width: 380px;
+				}
+
+				@media only screen and (max-width: 405px) {
+					width: 100%;
+					height: 475px;
+				}
+			}
+		}
+
+		.repairs-map__objects {
+			width: 600px;
+			height: 600px;
+
+			@media only screen and (max-width: 760px) {
+				width: 100%;
+			}
+		}
+
+		@media only screen and (max-width: 760px) {
+			flex-direction: column;
+			
+			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width: 760px) {
+		height: 1290px;
+	}
+
+	@media only screen and (max-width: 405px) {
+		height: auto;
+	}	
+}

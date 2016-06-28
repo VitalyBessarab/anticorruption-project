@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>contacts</title>
+	<link rel='stylesheet' href='css/libs.min.css'>
+	<link rel='stylesheet' href='css/main.css'>
+
+	<!-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyBrqwWRRxTFkbcdsK1_zyCC3phUKUyESug"></script> -->
+	<script src="http://maps.google.com/maps/api/js?key=AIzaSyBrqwWRRxTFkbcdsK1_zyCC3phUKUyESug&amp;sensor=false&amp;language=en"></script>
+</head>
+<body>
+	<header class='header'>
+		<a href='#' class='logo logo--head'>
+			<img src='img/logo.png' alt='Anticoruption'>
+		</a>
+
+		<ul class='menu menu--head'>
+			<li class='menu__item menu__item--is-active'><a href='#'>Головна</a></li>
+			<li class='menu__item'><a href='#'>Новини</a></li>
+			<li class='menu__item'><a href='#'>Підтримати</a></li>
+			<li class='menu__item'><a href='#'>Про нас</a></li>
+			<li class='menu__item'><a href='#'>Розслідування</a></li>
+			<li class='menu__item'><a href='#'>Приєднатись</a></li>
+			<li class='menu__item'><a href='#'>Контакти</a></li>
+			<li class='menu__item'><a href='#'>Карта</a></li>
+			<li class='menu__item'><a href='#'>Здати корупціонера</a></li>
+		</ul>
+
+		<button class='btn btn-search btn-search--head'></button>
+		<div class="search-box">
+			<form class='form form--search-box' action='#'>
+				<input type='text' class='input input--search-box' placeholder='Пошук'>
+				<input type='submit' class='btn btn--search-box' value=''>
+			</form>
+		</div>
+
+		<div class='lang-switcher lang-switcher--head'>
+			<button class="lang-switcher__selector">UA</button>
+			<ul class="lang-switcher__languages">
+				<li><a href="#">EN</a></li>
+				<li><a href="#">RU</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<section class="main-contacts">
+		<div class='contacts--main-contacts'>
+			<h3 class='title title--about title--about-cells title--about-cells-contacts'>КОНТАКТИ</h3>
+
+			<ul class='info info--main-contacts'>
+				<li class='info__item info__item--email'>
+					<h4>Email</h4>
+					<a href='mailto:info@shtab.net'>info@shtab.net</a>
+				</li>
+
+				<li class='info__item info__item--phone'>
+					<h4>Телефон/Факс</h4>
+					<a href='tel:+380976021543'>+38 (097) 602 15 43</a> 
+				</li>
+
+				<li class='info__item info__item--address'>
+					<h4>Адреса</h4>
+					<address>01021 м. Київ, вул.<br>Грушевського, 28/2, оф.15</address> 
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class='cells'>
+		<h2 class="title title--about title--about-cells">ОСЕРЕДКИ</h2>
+
+		<select class='select-city' data-allow-clear='true' data-placeholder='Оберіть місто'></select>
+		<div class='map-container'>
+			<div class='map-cells'></div>
+		</div>
+		
+
+		<a href="#" class='btn btn--map-repairs'>ДО КАРТИ РЕМОНТІВ</a>
+	</section>
+	
+	<section class='btn-box btn-box--team-contacts'>
+		<small class='btn-box__head'>Команда</small>
+
+		<h2 class='title title--btn-box-team'>ЗНАЙОМТЕСЬ<br>З НАШОЮ КОМАНДОЮ</h2>
+		
+		<a href='#' class='btn btn--btn-box-team'>ПРО НАС</a>
+	</section>
+
+	<footer class='footer'>
+		<div class='footer__container footer__container--contacts'>
+			<div class='contacts'>
+				<h3 class='title title--contacts'>КОНТАКТИ</h3>
+
+				<ul class='info info--contacts'>
+					<li class='info__item info__item--email'>
+						<h4>Email</h4>
+						<a href='mailto:info@shtab.net'>info@shtab.net</a>
+					</li>
+
+					<li class='info__item info__item--phone'>
+						<h4>Телефон/Факс</h4>
+						<a href='tel:+380976021543'>+38 (097) 602 15 43</a> 
+					</li>
+
+					<li class='info__item info__item--address'>
+						<h4>Адреса</h4>
+						<address>01021 м. Київ, вул.<br>Грушевського, 28/2, оф.15</address> 
+					</li>
+				</ul>
+			</div>
+
+			<div class='social'>
+				<h3 class='title title--social'>МИ У СОЦМЕРЕЖАХ</h3>
+
+				<ul class='info info--social'>
+					<li class='info__item info__item--facebook'>
+						<a href='#'>facebook</a>
+					</li>
+					<li class='info__item info__item--twitter'>
+						<a href='#'>twitter</a>
+					</li>
+					<li class='info__item info__item--vkontakte'>
+						<a href='#'>vkontakte</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class='subscribe'>
+				<h3 class='title title--subscribe'>ПІДПИСАТИСЬ НА ОНОВЛЕННЯ</h3>
+
+				<form class='form form--subscribe' action='#'>
+					<input type='text' class='input input--subscribe-name' placeholder="Ваше ім'я">
+					<input type='text' class='input input--subscribe-email' placeholder='Ваш Email'>
+					<input type='submit' class='btn btn--subscribe' value=''>
+				</form>
+
+				<small class='copyright copyright--subscribe'>ГО «Антикорупційний штаб» &copy; 2016</small>
+			</div>
+		</div>
+	</footer>
+
+	<script src='js/libs.min.js'></script>
+	<script src='js/common.js'></script>
+</body>
+</html>

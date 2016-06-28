@@ -1,0 +1,146 @@
+.date-box {
+	width: 300px;
+
+	background-color: $primary-color-dark2;
+
+	.date-box__title {
+		width: 250px;
+		padding-left: 49px;
+		margin-left: 0px;
+		margin-top: 49px;
+
+		background-image: url("/img/select_long3.png");
+		background-repeat: no-repeat;
+		background-position: 1px;
+
+		font-family: 'OpenSans-Semibold', Arial, sans-serif;
+		font-size: 18px;
+		color: $primary-color-light1;
+
+		@media only screen and (max-width: 1000px) {
+			margin-top: 10px;
+
+			font-size: 15px;
+		}
+	}
+
+	.date-box__date {
+		text-align: center;
+
+		@media only screen and(max-width: 1000px) {
+			padding-left: 46px;
+			padding-bottom: 10px;
+
+			text-align: left;
+		}
+	}
+
+	.date-box__date > p:first-child {
+		margin-top: 8px;
+
+		font-family: 'OpenSans-Semibold', Arial, sans-serif;
+		font-size: 120px;
+		color: $primary-color-dark5;
+
+		@media only screen and(max-width: 1000px) {
+			display: inline-block;
+
+			font-size: 15px;
+		}			
+	}
+
+	.date-box__date > p:last-child {
+		margin-top: 5px;
+
+		font-family: 'OpenSans-Bold', Arial, sans-serif;
+		font-size: 15px;
+		word-spacing: 4px;
+
+		color: $primary-color-dark5;
+
+		@media only screen and(max-width: 1000px) {
+			display: inline-block;
+		}			
+	}
+
+	@media only screen and(max-width: 1000px) {
+		position: absolute;
+		left: 0;
+
+		width: 220px;
+	}
+
+	@media only screen and(max-width: 710px) {
+		left: 2%;
+		top: -30px;
+	}
+}
+
+.date-box--news {
+	flex: 1 1 280px;
+
+	z-index: 1;
+	
+	.date-box__title {
+		max-width: 250px;
+		width: 100%;
+	}
+}
+
+.date-box--news-reverse {
+	order: 2;
+
+	background-color: $primary-color-dark1;
+
+	.date-box__title {
+		position: relative;
+		top: 0;
+		left: -21px;
+
+		padding-left: 70px;
+
+		background-image: url("/img/select_long5.png");
+		background-repeat: no-repeat;
+		background-position: 0 4px;
+		
+		@media only screen and (max-width: 1000px) {
+			width: 220px;
+		}
+
+		@media only screen and (max-width: 710px) {
+			left: 0;
+
+			padding-left: 49px;
+
+			background-position: -21px 4px;
+		}		
+	}
+
+	.date-box__date > p:first-child {
+		margin-top: 5px;
+
+		color: $primary-color-dark3;
+	}
+
+	.date-box__date > p:last-child {
+		margin-top: 7px;
+
+		word-spacing: 1px;
+		color: $primary-color-dark3;
+	}
+
+	@media only screen and(max-width: 1000px) {
+		left: auto;
+		right: 0;
+		
+		width: 220px;
+	}	
+
+	@media only screen and (max-width: 800px) {
+		order: 2;
+	}
+	
+	@media only screen and (max-width: 710px) {
+		right: 2%;
+	}	
+}

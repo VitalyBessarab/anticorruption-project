@@ -1,0 +1,31 @@
+.header {
+	position: relative;
+	overflow: hidden;
+
+	display: flex;
+	flex-flow: row no-wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	max-width: 1000px;
+	min-width: 320px;
+	height: 150px;
+	margin: 0 auto;
+
+	background-color: $primary-color-dark2;
+	border-bottom: 7px solid $primary-color-dark1;
+
+	@media only screen and (max-width: 800px) {
+		flex-flow: column wrap;
+		justify-content: space-around;
+
+		height: 195px;
+	}
+
+	@media only screen and (max-width: 560px) {
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		
+		height: 530px;
+	}	
+}

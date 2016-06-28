@@ -1,0 +1,22 @@
+.members {
+	max-width: 1000px;
+	min-width: 320px;
+	margin: 0 auto;
+
+	.members__container {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		@media only screen and (max-width: 935px) {
+			justify-content: space-around;
+		}
+
+		@media only screen and (max-width: 880px) {
+			justify-content: space-between;
+			
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+	}
+}

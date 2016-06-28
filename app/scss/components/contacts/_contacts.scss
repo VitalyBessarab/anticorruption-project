@@ -1,0 +1,14 @@
+.contacts {
+	flex: 1 1 325px;
+	height: 259px;
+
+	@media only screen and(max-width: 710px) {
+		flex: 1 1 200px;
+	}
+
+	@media only screen and(max-width: 560px) {
+		flex: 1 1 100%;
+		height: 290px;
+		margin-bottom: 25px;
+	}
+}

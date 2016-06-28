@@ -1,0 +1,14 @@
+.social {
+	flex: 1 1 325px;
+	
+	height: 259px;
+
+	border-left: 1px solid $primary-color-dark1;
+	border-right: 1px solid $primary-color-dark1;
+
+	@media only screen and(max-width: 710px) {
+		flex: 1 1 200px;
+
+		border-right: none;
+	}
+}

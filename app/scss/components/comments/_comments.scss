@@ -1,0 +1,33 @@
+.comments {
+	max-width: 900px;
+	margin-left: 5%;
+	margin-right: auto;
+
+	.comments__title {
+		width: 225px;
+		
+		background-image: url('/img/select_long6.png');
+		background-repeat: no-repeat;
+		background-position: 98%;
+
+		font: 14px 'OpenSans-Bold', Arial, sans-serif;
+		color: $primary-color-dark4;
+	}
+
+	.comments__container {
+		margin-top: 36px;
+		padding-left: 75px;
+		
+		background-image: url('/img/no_icons.png');
+		background-repeat: no-repeat;
+	}
+}
+
+.comments--news-inner {
+	margin-top: 46px;
+	padding-bottom: 50px;
+
+	@media only screen and (max-width: 880px) {
+		margin-left: 2%;
+	}
+}

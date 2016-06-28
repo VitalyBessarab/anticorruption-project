@@ -1,0 +1,113 @@
+.select-city {
+	& + .select2 {
+		position: absolute;
+		z-index: 1;
+		top: -7px;
+		right: 0;
+
+		height: 50px;
+
+		.select2-selection {
+			height: 50px;
+			line-height: 50px;
+
+			border: none;
+			outline: none;
+			border-radius: 0;
+
+			.select2-selection__rendered {
+				height: 50px;
+				padding-left: 25px;
+
+				font: 16px/50px 'OpenSans-Regular', Arial, sans-serif;
+				color: $primary-color-dark4;
+
+				.select2-selection__clear {
+					height: 50px;
+					line-height: 50px;
+					padding-right: 50px;
+				}
+			}
+
+			.select2-selection__arrow {
+				top: 0;
+				right: 0;
+
+				width: 50px;
+				height: 50px;
+				line-height: 50px;	
+
+				background-color: $primary-color-dark1;
+				background-image: url('/img/triangle_reverse.png');
+				background-repeat: no-repeat;
+				background-position: 50%;
+
+				b[role='presentation'] {
+					border: none;
+				}
+			}
+
+			&[aria-expanded="true"] {
+				.select2-selection__arrow {
+					background-image: url('/img/triangle.png');	
+				}
+			}
+		}
+
+		@media only screen and (max-width: 635px) {
+			top: 81px;
+		}
+
+		@media only screen and (max-width: 400px) {
+			left: 0;
+
+			width: 100% !important;
+		}		
+	}
+}
+
+.select2-dropdown {
+	height: 370px;
+
+	border: none;
+	border-radius: 0;
+
+	.select2-results {
+		height: 320px;
+	
+		.select2-results__options {
+			max-height: 320px;
+	
+			.select2-results__option {
+				height: 44px;
+				padding-top: 0;
+				padding-bottom: 0;
+				padding-left: 25px;
+
+				font: 16px/44px 'OpenSans-Regular', Arial, sans-serif;
+				color: $primary-color-dark4;
+			}
+		}
+	}
+	
+	.select2-search {
+		padding: 0;
+	
+		.select2-search__field {
+			height: 50px;
+			padding-left: 23px;
+			padding-right: 50px;
+
+			background-image: url('/img/search_icon2.png');
+			background-repeat: no-repeat;
+			background-position: 93%;
+
+			outline: none;
+			border: none;
+			border-top: 1px solid $primary-color-light2;
+			
+			font: 16px/50px 'OpenSans-Regular', Arial, sans-serif;
+			color: $primary-color-dark4;
+		}
+	}
+}

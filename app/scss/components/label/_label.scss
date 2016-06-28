@@ -1,0 +1,58 @@
+.label {
+	position: relative;
+	
+	display: inline-block;
+
+	@media only screen and (max-width: 560px) {
+		width: 100%;
+	}
+}
+
+.label--required {
+	&:after {
+		content: "*";
+
+		position: absolute;
+		top: 5px;
+		right: 10px;
+
+		font: 16px 'OpenSans-Italic', Arial, sans-serif;
+		color: $primary-color-dark1;
+		
+		@media only screen and (max-width: 835px) {
+			right: auto;
+			left: 330px;
+		}
+		
+		@media only screen and (max-width: 560px) {
+			right: 25px;
+			left: auto;			
+		}
+	}
+}
+
+.label--email-tab-2 {
+	top: -51px;
+
+	@media only screen and (max-width: 835px) {
+		position: static;
+	}	
+}
+
+.label--social-tab-2 {
+	position: absolute;
+	left: 0;
+	top: 225px;
+
+	@media only screen and (max-width: 835px) {
+		position: static;
+	}		
+}
+
+.label--add-tab-2 {
+	margin-top: 24px;
+
+	@media only screen and (max-width: 835px) {
+		margin-top: 0;
+	}		
+}

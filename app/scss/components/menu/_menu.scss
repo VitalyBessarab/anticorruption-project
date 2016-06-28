@@ -1,0 +1,159 @@
+.menu {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+
+	width: 490px;
+	height: 65px;
+
+	list-style-type: none;
+}
+
+.menu {
+	& > .menu__item {
+			width: 33.333%;
+			
+			&:nth-of-type(1) {
+				margin-left: -26px;
+				margin-top: -1px;
+			}
+
+			&:nth-of-type(2) {
+				margin-left: -34px;
+				margin-top: -1px;
+			}
+
+			&:nth-of-type(3) {
+				margin-left: -3px;
+				margin-top: -1px;
+			}
+
+			&:nth-of-type(4) {
+				margin-left: -26px;
+				margin-top: 9px;
+			}
+
+			&:nth-of-type(5) {
+				margin-left: -34px;
+				margin-top: 9px;
+			}
+
+			&:nth-of-type(6) {
+				margin-left: -4px;
+				margin-top: 9px;
+			}
+
+			&:nth-of-type(7) {
+				margin-left: -26px;
+				margin-top: 9px;
+			}
+
+			&:nth-of-type(8) {
+				margin-left: -33px;
+				margin-top: 9px;
+			}
+
+			&:nth-of-type(9) {
+				width: 185px;
+				margin-left: -5px;
+				margin-top: 9px;
+			}
+	}
+
+	a {
+		position: relative;
+
+		padding-left: 25px;
+
+		font-family: 'OpenSans-Regular', Arial, sans-serif;
+		font-size: 15px;
+		text-decoration: none;
+
+		color: $primary-color-light1;
+
+		&:before {
+			content: "";
+
+			position: absolute;
+			top: 6px;
+			left: 20px;
+
+			width: 0;
+			height: 9px;
+			
+			background-image: url('/img/select_long7.png');
+			background-repeat: no-repeat;
+
+			transition-property: left, width;
+			transition-duration: 150ms, 150ms;
+
+			@media only screen and (max-width: 560px) {
+				height: 15px;
+
+				background-position: 0 3px;
+			}
+		}
+
+		&:hover {
+			background-repeat: no-repeat;
+			background-position: 1px;
+
+			&:before {
+				left: -19px;
+
+				width: 36px;
+			}
+		}
+	}
+}
+
+.menu--head {
+	margin-left: 19%;
+
+	@media only screen and (max-width: 1000px) {
+		margin-left: 10%;
+	}	
+
+	@media only screen and (max-width: 880px) {
+		margin-left: 5%;
+	}	
+
+	@media only screen and (max-width: 800px) {
+		order: 3;
+
+		margin-left: 10%;
+	}
+
+	@media only screen and (max-width: 560px) {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	& > .menu__item {
+		@media only screen and (max-width: 560px) {
+			width: 100%;
+			margin: 0;
+
+			text-align: center;
+
+			&:nth-of-type(n) {
+				width: 100%;
+				margin: 0 25px 20px 0;
+			}
+		}
+	}
+
+	a {	
+		@media only screen and (max-width: 560px) {
+			font-size: 20px;
+		}
+	}
+}
+
+.menu__item--is-active > a {
+	background-image: url('/img/select.png');
+	background-repeat: no-repeat;
+	background-position: 1px;
+	
+	font-family: 'OpenSans-Bold', Arial, sans-serif;
+}

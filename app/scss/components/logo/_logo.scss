@@ -1,0 +1,24 @@
+.logo {
+	& > img {
+		width: 200px;
+		height: 60px;
+	}
+}
+
+.logo--head {
+	margin-left: 5%;
+	margin-top: -0.2%;
+
+	@media only screen and (max-width: 880px) {
+		margin-left: 2%;
+	}
+
+	@media only screen and (max-width: 800px) {
+		order: 1;
+		margin: 0;
+	}
+	
+	@media only screen and (max-width: 560px) {
+		margin-top: 20px;
+	}	
+}

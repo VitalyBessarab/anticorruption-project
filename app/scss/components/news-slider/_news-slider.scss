@@ -1,0 +1,237 @@
+.news-slider {
+	position: relative;
+
+	width: 700px;
+
+	.cslide-prev-next {
+		position: absolute;
+		right: 100px;
+		bottom: 0;
+
+		width: 200px;
+		height: 100px;
+
+		.cslide-prev {
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			width: 100px;
+			height: 100px;
+
+			background-image: url('/img/arrow_left.png');
+			background-repeat: no-repeat;
+			background-position: 50%;
+			background-color: $primary-color-dark1;
+
+			@media only screen and (max-width: 1000px) {
+				width: 150px;
+				height: 50px;
+			}
+
+			@media only screen and (max-width: 800px) {
+				height: 70px;
+			}
+			
+			@media only screen and (max-width: 710px) {
+				width: 90px;
+				height: 60px;
+			}
+
+			@media only screen and (max-width: 480px) {
+				width: 60px;
+			}			
+		}
+
+		.cslide-next {
+			position: absolute;
+			left: 100px;
+			top: 0;
+
+			width: 100px;
+			height: 100px;
+
+			background-image: url('/img/arrow_right.png');
+			background-repeat: no-repeat;
+			background-position: 50%;
+			background-color: $primary-color-dark2;
+
+			@media only screen and (max-width: 1000px) {
+				left: 150px;
+
+				width: 150px;
+				height: 50px;
+			}
+
+			@media only screen and (max-width: 800px) {
+				height: 70px;
+			}
+
+			@media only screen and (max-width: 710px) {
+				left: 90px;
+
+				width: 90px;
+				height: 60px;
+			}			
+			@media only screen and (max-width: 480px) {
+				left: 60px;
+				width: 60px;
+			}			
+		}
+
+		.cslide-disabled { 
+			&:first-child {
+				background-image: url('/img/arrow_left2_disabled.png');
+			}
+
+			&:last-child {
+				background-image: url('/img/arrow_right2_disabled.png');	
+			}
+			
+		}
+
+		@media only screen and (max-width: 1000px) {
+			right: 0;
+
+			width: 300px;
+			height: 50px;
+		}
+
+		@media only screen and (max-width: 800px) {
+			height: 70px;
+		}
+		
+		@media only screen and (max-width: 710px) {
+			right: 2%;
+			bottom: 10px;
+
+			width: 180px;
+			height: 60px;
+		}
+
+		@media only screen and (max-width: 640px) {
+			bottom: -21px;
+		}
+
+		@media only screen and (max-width: 480px) {
+			width: 120px;
+		}
+
+		@media only screen and (max-width: 440px) {
+			bottom: -62px;
+			right: 2%;
+		}		
+	}
+
+	@media only screen and (max-width: 1000px) {
+		width: 100%;
+	}
+}
+
+.news-slider--reverse {
+	order: 1;
+	
+	.cslide-prev-next {
+		left: 100px;
+
+		.cslide-prev {
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			width: 100px;
+			height: 100px;
+
+			background-image: url('/img/arrow_left.png');
+			background-repeat: no-repeat;
+			background-position: 50%;
+			background-color: $primary-color-dark1;
+
+			@media only screen and (max-width: 1000px) {
+				width: 150px;
+				height: 50px;
+			}
+
+			@media only screen and (max-width: 800px) {
+				height: 70px;
+			}
+			
+			@media only screen and (max-width: 710px) {
+				width: 90px;
+				height: 60px;
+			}
+
+			@media only screen and (max-width: 480px) {
+				width: 60px;
+			}			
+		}
+
+		.cslide-next {
+			position: absolute;
+			left: 100px;
+			top: 0;
+
+			width: 100px;
+			height: 100px;
+
+			background-image: url('/img/arrow_right.png');
+			background-repeat: no-repeat;
+			background-position: 50%;
+			background-color: $primary-color-dark2;
+
+			@media only screen and (max-width: 1000px) {
+				left: 150px;
+
+				width: 150px;
+				height: 50px;
+			}
+
+			@media only screen and (max-width: 800px) {
+				height: 70px;
+			}
+
+			@media only screen and (max-width: 710px) {
+				left: 90px;
+
+				width: 90px;
+				height: 60px;
+			}			
+			@media only screen and (max-width: 480px) {
+				left: 60px;
+				width: 60px;
+			}	
+		}
+
+		@media only screen and (max-width: 1000px) {
+			left: 0;
+
+			width: 300px;
+			height: 50px;
+		}
+
+		@media only screen and (max-width: 800px) {
+			height: 70px;
+		}
+		
+		@media only screen and (max-width: 710px) {
+			left: 2%;
+			right: auto;
+			bottom: 10px;
+
+			width: 180px;
+			height: 60px;
+		}
+		@media only screen and (max-width: 640px) {
+			bottom: -21px;
+		}
+		
+		@media only screen and (max-width: 480px) {
+			width: 120px;
+		}
+
+		@media only screen and (max-width: 440px) {
+			bottom: -62px;
+			right: 2%;
+		}	
+	}
+}

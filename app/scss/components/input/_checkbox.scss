@@ -1,0 +1,174 @@
+.checkbox {
+	position: relative;
+
+	width: 315px;
+
+	.checkbox__input {
+		position: absolute;
+		clip: rect(0, 0, 0, 0);
+	}
+
+	.checkbox__label {
+		display: inline-block;
+
+		height: 26px;
+		padding-left: 33px;
+		
+		cursor: pointer;
+
+		&:before {
+			content: ' ';
+
+			position: absolute;
+			left: 0;
+
+			display: inline-block;
+			width: 28px;
+			height: 26px;
+
+			background-image: url('/img/chkbox_icon.png');
+			background-repeat: no-repeat;
+			background-position: -2px -26px;
+		}
+	}
+
+	.checkbox__input:checked + .checkbox__label:before {
+		left: -2px;
+		top: -4px;
+
+		background-position: 0 0;
+	}	
+}
+
+.checkbox--help {
+	.checkbox__label {
+		font: 13px 'OpenSans-Italic', Arial, sans-serif;
+		color: $primary-color-dark4;		
+	}
+}
+
+.checkbox--repairs-map {
+	display: inline-block;
+	width: 275px;
+	margin-right: 17px;
+
+	.checkbox__label {
+		position: relative;
+
+		width: 275px;
+		height: 40px;
+		padding-left: 85px;
+
+		font: 14px 'OpenSans-Regular', Arial, sans-serif;
+		color: $primary-color-dark4;
+
+		span {
+			padding-left: 2px;
+
+			color: $primary-color-light9;
+		}	
+	}
+
+	@media only screen and (max-width: 880px) {
+		margin-left: -3%;
+		margin-right: 5px;
+	}
+}
+
+.checkbox--schools {
+	.checkbox__label {
+		&:after {
+			content: '';
+
+			position: absolute;
+			left: 37px;
+			top: -9px;	
+
+			width: 40px;
+			height: 40px;
+
+			background-image: url('/img/schools_icon.png');
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+.checkbox--buildings {
+	.checkbox__label {
+		margin-top: 28px;
+
+		&:after {
+			content: '';
+
+			position: absolute;	
+			left: 37px;
+			top: -9px;	
+
+			width: 40px;
+			height: 40px;
+
+			background-image: url('/img/buildings_icon.png');	
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+.checkbox--sosial-inst {
+	.checkbox__label {
+		margin-top: 28px;
+
+		&:after {
+			content: '';
+
+			position: absolute;	
+			left: 37px;
+			top: -9px;	
+
+			width: 40px;
+			height: 40px;
+
+			background-image: url('/img/social_institutions_icon.png');	
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+.checkbox--schools-medical {
+	.checkbox__label {
+		margin-top: 28px;
+
+		&:after {
+			content: '';
+
+			position: absolute;
+			left: 37px;
+			top: -9px;	
+
+			width: 40px;
+			height: 40px;
+
+			background-image: url('/img/medical_icon.png');	
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+.checkbox--schools-sport {
+	.checkbox__label {
+		margin-top: 28px;
+
+		&:after {
+			content: '';
+
+			position: absolute;
+			left: 37px;
+			top: -9px;	
+
+			width: 40px;
+			height: 40px;
+			
+			background-image: url('/img/sport_icon.png');
+			background-repeat: no-repeat;
+		}
+	}
+}

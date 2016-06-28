@@ -1,0 +1,10 @@
+.subscribe {
+	flex: 1 1 350px;
+	
+	height: 259px;
+	padding-left: 48px;
+
+	@media only screen and (max-width: 1000px) {
+		padding-left: 0;
+	}
+}

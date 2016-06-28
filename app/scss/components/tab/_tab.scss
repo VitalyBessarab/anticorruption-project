@@ -1,0 +1,149 @@
+.tab {
+	padding-top: 47px;
+	padding-left: 49px;
+	padding-bottom: 50px;
+
+	.tab__description {
+		margin-bottom: 30px;
+		padding-right: 40px;
+
+		font: 16px 'OpenSans-Light', Arial, sans-serif;
+		color: $primary-color-dark4;
+
+		@media only screen and (max-width: 560px) {
+			padding-right: 20px;
+		}		
+	}
+
+	.tab__form--first {
+		margin-top: 61px;
+	}
+	.tab__form--second {
+		margin-top: 61px;
+	}
+	.tab__form--third {
+		margin-top: 47px;
+	}
+	.tab__form--fourth {
+		margin-top: 53px;
+	}
+
+	.tab__form--one-col {
+		width: 350px;
+
+		@media only screen and (max-width: 560px) {
+			width: 100%;
+		}		
+	}
+
+	.tab__form--two-col {
+		position: relative;
+
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		width: 750px;
+
+		@media only screen and (max-width: 835px) {
+			flex-direction: column;
+
+			width: auto;
+		}	
+
+
+		@media only screen and (max-width: 560px) {
+			width: 100%;
+		}	
+	}
+
+	.tab__add-file {
+		position: absolute;
+		bottom: 209px;
+		right: -38px;
+
+		display: block;
+		width: 21px;
+		height: 21px;
+
+		background-image: url('/img/add_file_icon.png');
+		background-repeat: no-repeat;
+
+		@media only screen and (max-width: 880px) {
+			right: 13px;
+		}
+
+		@media only screen and (max-width: 835px) {
+			right: auto;
+			left: 316px;
+			bottom: 242px;
+		}		
+
+		@media only screen and (max-width: 560px) {
+			bottom: 238px;
+			right: 27px;
+			left: auto;
+
+			width: 30px;
+			height: 30px;
+
+			background-image: url('/img/add_file_icon.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+
+	#add-file {
+		clip: rect(0,0,0,0);
+
+		position: absolute;
+		left: 0;
+
+
+		width: 0;
+		height: 0;
+	}
+
+	.tab__required {
+		position: relative;
+
+		display: inline-block;
+		padding-right: 135px;
+
+		font: 13px 'OpenSans-Italic', Arial, sans-serif;
+		color: $primary-color-dark4;
+
+		&:before {
+			content: "*";
+
+			position: absolute;
+			left: -14px;
+			top: -2px;
+
+			font: 16px 'OpenSans-Italic', Arial, sans-serif;
+			color: $primary-color-dark1;			
+		}
+	
+		@media only screen and (max-width: 835px) {
+			margin-left: 15px;
+			margin-top: 15px;
+		}
+
+		@media only screen and (max-width: 560px) {
+			padding-right: 0;
+		}
+	}
+
+
+	@media only screen and (max-width: 710px) {
+		padding-left: 2%;
+	}
+}
+
+.tab--first {
+	padding-bottom: 75px;
+
+	@media only screen and (max-width: 560px) {
+		padding-bottom: 50px;
+	}
+}

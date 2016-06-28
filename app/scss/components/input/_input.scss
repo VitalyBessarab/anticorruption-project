@@ -1,0 +1,142 @@
+.input {
+	width: 250px;
+	height: 50px;
+	
+	border-top: 1px solid $primary-color-light4;
+	border-right: 1px solid $primary-color-light4;
+	border-bottom: 1px solid $primary-color-light4;
+	border-left: 3px solid $primary-color-dark1;
+
+	outline: none;
+}
+
+.input[placeholder] {
+	padding-left: 23px;
+	padding-bottom: 5px;
+
+	font-family: 'OpenSans-Italic', Arial, sans-serif;
+	font-size: 13px;
+
+	color: $primary-color-light5;
+}
+
+.input--donate {
+	margin-top: 26px;
+	margin-left: 48px;
+
+	@media only screen and (max-width: 880px) {
+		margin-left: 5%;
+	}
+
+	@media only screen and (max-width: 710px) {
+		width: 95%;
+		margin-left: 2%;
+	}	
+}
+
+.input--subscribe-name {
+	width: 302px;
+	
+	@media only screen and (max-width: 690px) {
+		width: 43%;	
+	}	
+
+	@media only screen and (max-width: 560px) {
+		display: block;
+		width: 82%;
+		margin-left: 9%;
+	}
+}
+
+.input--subscribe-email {
+	display: inline-block;
+	width: 252px;	
+	margin-top: 25px;
+
+	@media only screen and (max-width: 1000px) {
+		width: 43%;
+	}
+
+	@media only screen and (max-width: 560px) {
+		display: inline-block;
+		width: 67%;
+		margin-left: 9%;
+	}
+}
+
+.input--search-box {
+	width: 85%;
+	margin-top: -18px;
+	margin-left: 49px;
+
+	background-color: $primary-color-dark1;
+
+	border: none;
+	border-bottom: 1px solid $primary-color-light1;
+
+	font-size: 15px;
+
+	color: $primary-color-light1;
+	
+	&::placeholder {
+		display: block;
+		height: 100%;
+
+		line-height: 4;
+		font-size: 15px;
+
+		background-color: $primary-color-dark1;
+		color: $primary-color-light1;
+
+		@media only screen and (max-width: 800px) {
+			line-height: normal;
+		}
+	}
+
+	@media only screen and (max-width: 800px) {
+		height: 20px;
+		margin-left: 9px;
+		margin-top: 0;
+	}
+}
+
+.input--search-box[placeholder] {
+	padding-left: 0;
+
+	font-size: 15px;
+
+	outline: none;
+	
+	color: $primary-color-light1;
+
+	@media only screen and (max-width: 800px) {
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+.input--comments {
+	width: 477px;
+	height: 100px;
+
+	resize: none;
+	outline: none;
+
+	@media only screen and (max-width: 635px) {
+		width: 90%;
+	}
+}
+
+.input--comments[placeholder] {
+	padding: 14px 21px 12px;
+}
+
+
+.input--tab {
+	width: 350px;
+	margin-bottom: 25px;
+
+	@media only screen and (max-width: 560px) {
+		width: 97%;
+	}	
+}

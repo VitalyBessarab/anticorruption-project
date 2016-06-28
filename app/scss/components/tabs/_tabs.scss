@@ -1,0 +1,150 @@
+.tabs {
+	position: relative;
+
+	list-style: none;
+
+	.tabs__container {
+		display: flex;
+		flex-flow: row nowrap;
+
+		width: auto;
+		margin: 0 auto;
+
+		.tabs__link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			width: 250px;
+			height: 100px;
+			line-height: 19px;
+
+			background-color: $primary-color-dark1;
+
+			border-right: 1px solid $primary-color-dark9;
+
+			font: 16px 'OpenSans-Semibold', Arial, sans-serif;
+			text-align: center;
+
+			color: $primary-color-light1;
+			cursor: pointer;
+
+			&:last-child {
+				border-right: none;
+				
+				@media only screen and (max-width: 635px) {
+					border-right: 1px solid $primary-color-dark9;
+				}				
+			}
+
+			@media only screen and (max-width: 635px) {
+				width: 50%;
+				height: 50px;
+
+				border: 1px solid $primary-color-dark9;
+			}			
+		}
+
+		.tabs__link--current {
+			position: relative;
+
+			background-color: $primary-color-light1;
+
+			border-bottom: 1px solid $primary-color-light4;
+
+			color: $primary-color-dark1;
+
+			&:before {
+				content: "";
+
+				position: absolute;
+				z-index: 1;
+				right: 47%;
+				top: 99px;
+
+				width: 0;
+				height: 0;
+
+				border-left: 8px solid transparent;
+				border-top: 8px solid $primary-color-light1;
+				border-right: 8px solid transparent;
+				
+				@media only screen and (max-width: 635px) {
+					display: none;
+				}
+			}
+
+			&:after {
+				content: "";
+
+				position: absolute;
+				right: 46%;
+				top: 99px;
+
+				width: 0;
+				height: 0;
+
+				border-left: 10px solid transparent;
+				border-top: 10px solid $primary-color-light4;
+				border-right: 11px solid transparent;
+
+				@media only screen and (max-width: 635px) {
+					display: none;
+				}
+			}
+
+			@media only screen and (max-width: 635px) {
+				border-bottom: 1px solid $primary-color-dark9;
+			}
+		}
+
+		@media only screen and (max-width: 635px) {
+			flex-flow: row wrap;
+
+			&:before {
+				content: "";
+
+				position: absolute;
+				z-index: 2;
+				top: 100px;
+				left: calc(50% - 31px);
+				
+				width: 0;
+				height: 0;
+
+				border-left: 30px solid transparent;
+				border-top: 19px solid $primary-color-dark1;
+				border-right: 29px solid transparent;
+			}
+
+			&:after {
+				content: "";
+
+				position: absolute;
+				z-index: 1;
+				left: calc(50% - 39px);
+				top: 100px;
+
+				width: 0;
+				height: 0;
+				
+				border-left: 38px solid transparent;
+				border-top: 24px solid $primary-color-dark9;
+				border-right: 37px solid transparent;
+			}
+		}
+	}
+	
+	.tabs__item {
+		display: none;
+		background-color: $primary-color-light1;
+	}
+
+	.tabs__item--current {
+		display: inherit;
+	}
+}
+
+.tabs--help {
+	margin-top: 40px;
+}

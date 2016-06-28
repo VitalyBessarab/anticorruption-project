@@ -1,0 +1,39 @@
+.news {
+	display: flex;
+	flex-flow: row nowrap;
+
+	max-width: 1000px;
+	min-width: 320px;
+	height: 350px;
+	margin: 100px auto 0;
+
+	@media only screen and(max-width: 1000px) {
+		position: relative;
+		
+		flex-flow: row wrap;
+	}
+
+	@media only screen and(max-width: 800px) {
+		margin-bottom: 100%;
+	}
+
+	@media only screen and(max-width: 710px) {
+		margin-bottom: 102%;
+	}
+
+	@media only screen and(max-width: 640px) {
+		margin-bottom: 107%;
+	}	
+
+	@media only screen and(max-width: 440px) {
+		margin-bottom: 122%;
+	}
+
+	@media only screen and(max-width: 360px) {
+		margin-bottom: 415px;
+	}	
+}
+
+.news--investigation {
+	margin-top: 50px;
+}

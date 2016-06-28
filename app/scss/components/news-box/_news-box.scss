@@ -1,0 +1,271 @@
+.news-box {
+	width: 400px;
+	padding-left: 50px;
+
+	background-color: $primary-color-light1;
+
+	text-align: left;
+
+	.news-box__address {
+		overflow: hidden;
+
+		display: block;
+		width: 100%;
+		height: 13px;
+		margin-top: 47px;
+		padding-right: 35px;
+
+		font-family: 'OpenSans-Regular', Arial, sans-serif;
+		font-size: 13px;
+		color: $primary-color-dark2;
+
+		@media only screen and(max-width: 1000px) {
+			padding-left: 190px;
+			padding-right: 45px;
+
+			text-align: right;
+		}
+
+		@media only screen and(max-width: 850px) {
+			padding-right: 20px;
+		}
+
+		@media only screen and(max-width: 800px) {
+			padding-right: 45px;
+		}
+
+		@media only screen and(max-width: 710px) {
+			padding-left: 45px;
+		}
+
+		@media only screen and(max-width: 560px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		@media only screen and(max-width: 480px) {
+			height: 15px;
+			margin-top: 45px;
+
+			font-size: 15px;
+		}		
+	}
+
+	.news-box__title {
+		overflow: hidden;
+
+		width: 325px;
+		height: 88px;
+		margin-top: 25px;
+		line-height: 1.25;
+
+		font-family: 'OpenSans-Semibold', Arial, sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+
+		color: $primary-color-dark4;
+
+		@media only screen and(max-width: 1000px) {
+			width: 95%;
+			height: 36px;
+
+			font-size: 15px;
+		}
+
+		@media only screen and(max-width: 868px) {
+			height: 54px;
+		}
+
+		@media only screen and(max-width: 800px) {
+			height: 42px;
+
+			font-size: 17px;	
+		}
+
+		@media only screen and(max-width: 632px) {
+			height: 63px;
+		}	
+		@media only screen and(max-width: 410px) {
+			height: 84px;
+		}		
+	}
+
+	.news-box__news {
+		overflow: hidden;
+
+		width: 310px;
+		height: 60px;
+		margin-top: 23px;
+		
+		line-height: 1.6;
+
+		font-family: 'OpenSans-Regular', Arial, sans-serif;
+		font-size: 13px;
+		color: $primary-color-light3;
+
+		@media only screen and(max-width: 1000px) {
+			width: 95%;
+			height: 36px;
+			margin-top: 26px;
+
+			line-height: 1.4;
+		}
+
+		@media only screen and(max-width: 800px) {
+			height: 42px;
+
+			font-size: 15px;	
+		}
+
+		@media only screen and(max-width: 561px) {
+			height: 63px;
+		}
+		@media only screen and(max-width: 386px) {
+			height: 84px;
+		}
+	}
+
+	.more {
+		display: inline-block;
+		margin-top: 36px;
+
+		font-family: 'OpenSans-Bold', Arial, sans-serif;
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		color: $primary-color-dark2;
+
+		@media only screen and (max-width: 1000px) {
+			margin-top: 38px;
+			padding-right: 45px;
+
+			text-align: right;
+		}
+	}
+
+	.more--right {
+		@media only screen and (max-width: 1000px) {
+			float: right;	
+		}
+	}
+
+	@media only screen and(max-width: 1000px) {
+		order: 1;
+
+		flex: 1 1 400px;
+
+		height: 300px;
+	}
+
+	@media only screen and(max-width: 800px) {
+		flex: none;
+
+		width: 100%;
+	}
+
+	@media only screen and(max-width: 640px) {
+		height: 330px;
+	}
+
+	@media only screen and(max-width: 480px) {
+		height: 380px;
+		padding-left: 2%;
+	}
+}
+
+.news-box--slider {
+	display: inline-block;
+	width: 400px;
+	height: 350px;
+
+	border-top: 1px solid transparent;
+
+	@media only screen and (max-width: 1000px) {
+		width: calc(100% - 300px);
+		height: 300px;
+	}
+
+	@media only screen and (max-width: 800px) {
+		width: 100%;
+	}	
+
+	@media only screen and (max-width: 640px) {
+		height: 330px;
+	}	
+
+	@media only screen and (max-width: 440px) {
+		height: 380px;
+	}	
+}
+
+.news-box--slider-reverse {
+	.news-box__address {
+		@media only screen and(max-width: 1000px) {
+			padding-right: 230px;
+			padding-left: 0;
+
+			text-align: left;
+		}
+
+		@media only screen and(max-width: 800px) {
+			padding-right: 240px;
+		}
+
+		@media only screen and(max-width: 710px) {
+			padding-left: 0;
+			padding-right: 50px;
+		}
+
+		@media only screen and(max-width: 560px) {
+			padding-left: 0;
+			padding-right: 5%;
+		}
+
+		@media only screen and(max-width: 480px) {
+			height: 15px;
+			margin-top: 45px;
+
+			font-size: 15px;
+		}	
+	}
+
+	.news-box__title {
+		height: 70px;
+		margin-top: 28px;
+		
+		@media only screen and (max-width: 1000px) {
+			height: 36px;
+		}
+
+		@media only screen and (max-width: 800px) {
+			height: 42px;
+		}		
+	}
+
+	.news-box__news {
+		height: 80px;
+		margin-top: 17px;
+
+		@media only screen and (max-width: 1000px) {
+			height: 36px;
+		}
+
+		@media only screen and (max-width: 935px) {
+			height: 54px;
+		}
+
+		@media only screen and (max-width: 800px) {
+			height: 46px;
+		}
+		
+		@media only screen and (max-width: 720px) {
+			height: 63px;
+		}
+	}
+
+	.more {
+		@media only screen and (max-width: 1000px) {
+			text-align: left;
+		}
+	}
+}
